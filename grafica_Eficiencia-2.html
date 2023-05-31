@@ -1,0 +1,381 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="admin, dashboard">
+	<meta name="author" content="StivenQuintero">
+	<meta name="robots" content="index, follow">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Dashboard postobon">
+	<meta property="og:title" content="Dashboard postobon">
+	<meta property="og:description" content="Dashboard postobon">
+	<meta property="og:image" content="/images/OIP.png">
+	<meta name="format-detection" content="telephone=no">
+	
+	<!-- PAGE TITLE HERE -->
+	<title>Dasboard Postobon</title>
+	
+	<!-- FAVICONS ICON -->
+	<link rel="shortcut icon" type="image/png" href="images/OIP.png">
+	<link href="vendor/jquery-nice-select/css/nice-select.css" rel="stylesheet">
+	<link href="vendor/owl-carousel/owl.carousel.css" rel="stylesheet">
+	<link rel="stylesheet" href="vendor/nouislider/nouislider.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+    <link rel="stylesheet" href="vendor/chartist/css/chartist.min.css">
+    <link rel="stylesheet" href="vendor/nouislider/nouislider.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+	 <!-- Datatable -->
+	 <link href="vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet">
+
+     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+     <link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
+     <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
+     	<!-- FAVICONS ICON -->
+	<link rel="shortcut icon" type="image/png" href="images/OIP.png">
+	<link href="vendor/jquery-nice-select/css/nice-select.css" rel="stylesheet">
+	<link href="vendor/owl-carousel/owl.carousel.css" rel="stylesheet">
+	<link rel="stylesheet" href="vendor/nouislider/nouislider.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+	 <!-- Datatable -->
+	 <link href="vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+	
+</head>
+<body>
+    <!--*******************
+        Cargando
+    ********************-->
+    <div id="preloader">
+        <div class="waviy">
+		   <span style="--i:1">L</span>
+		   <span style="--i:2">o</span>
+		   <span style="--i:3">a</span>
+		   <span style="--i:4">d</span>
+		   <span style="--i:5">i</span>
+		   <span style="--i:6">n</span>
+		   <span style="--i:7">g</span>
+		   <span style="--i:8">.</span>
+		   <span style="--i:9">.</span>
+		   <span style="--i:10">.</span>
+		</div>
+    </div>
+    <!--*******************
+        Fin de cargando
+    ********************-->
+
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper">
+
+        <!--**********************************
+            Logo esquina superior izquierda
+        ***********************************-->
+        <div class="nav-header">
+            <a href="index.html" class="brand-logo">
+				<div class="logo">
+					<img src="\images\OIP.png" alt="Logo de Postobón" style="width: 85px; height: 85px;">
+				  </div>				  
+            </a>
+            <div class="nav-control">
+                <div class="hamburger">
+                    <span class="line"></span><span class="line"></span><span class="line"></span>
+                </div>
+            </div>
+        </div>
+        <!--**********************************
+           Fin Logo esquina superior izquierda
+        ***********************************-->
+		
+	<!--**********************************
+            Header start
+        ***********************************-->
+        <div class="header">
+            <div class="header-content">
+                <nav class="navbar navbar-expand">
+                    <div class="collapse navbar-collapse justify-content-between">
+                        <div class="header-left">
+							<div class="dashboard_bar">
+                                Gráficos L1
+                            </div>
+                        </div>
+                        <ul class="navbar-nav header-right">
+							<li class="nav-item">
+								<div class="input-group search-area">
+									<input type="text" class="form-control" placeholder="Search here...">
+									<span class="input-group-text"><a href="javascript:void(0)"><i class="flaticon-381-search-2"></i></a></span>
+								</div>
+							</li>
+                            <li class="nav-item dropdown notification_dropdown">
+                                <a class="nav-link  ai-icon" href="javascript:void(0);" role="button" data-bs-toggle="dropdown">
+                                   <svg width="28" height="28" viewbox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M12.638 4.9936V2.3C12.638 1.5824 13.2484 1 14.0006 1C14.7513 1 15.3631 1.5824 15.3631 2.3V4.9936C17.3879 5.2718 19.2805 6.1688 20.7438 7.565C22.5329 9.2719 23.5384 11.5872 23.5384 14V18.8932L24.6408 20.9966C25.1681 22.0041 25.1122 23.2001 24.4909 24.1582C23.8709 25.1163 22.774 25.7 21.5941 25.7H15.3631C15.3631 26.4176 14.7513 27 14.0006 27C13.2484 27 12.638 26.4176 12.638 25.7H6.40705C5.22571 25.7 4.12888 25.1163 3.50892 24.1582C2.88759 23.2001 2.83172 22.0041 3.36039 20.9966L4.46268 18.8932V14C4.46268 11.5872 5.46691 9.2719 7.25594 7.565C8.72068 6.1688 10.6119 5.2718 12.638 4.9936ZM14.0006 7.5C12.1924 7.5 10.4607 8.1851 9.18259 9.4045C7.90452 10.6226 7.18779 12.2762 7.18779 14V19.2C7.18779 19.4015 7.13739 19.6004 7.04337 19.7811C7.04337 19.7811 6.43703 20.9381 5.79662 22.1588C5.69171 22.3603 5.70261 22.6008 5.82661 22.7919C5.9506 22.983 6.16996 23.1 6.40705 23.1H21.5941C21.8298 23.1 22.0492 22.983 22.1732 22.7919C22.2972 22.6008 22.3081 22.3603 22.2031 22.1588C21.5627 20.9381 20.9564 19.7811 20.9564 19.7811C20.8624 19.6004 20.8133 19.4015 20.8133 19.2V14C20.8133 12.2762 20.0953 10.6226 18.8172 9.4045C17.5391 8.1851 15.8073 7.5 14.0006 7.5Z" fill="#4f7086"></path>
+									</svg>
+                                    <span class="badge light text-white bg-primary rounded-circle">12</span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end">
+                                    <div id="dlab_W_Notification1" class="widget-media dlab-scroll p-3" style="height:380px;">
+									</div>
+                                    <a class="all-notification" href="javascript:void(0);">See all notifications <i class="ti-arrow-end"></i></a>
+                                </div>
+                            </li>
+							<li class="nav-item dropdown notification_dropdown">
+                                <a class="nav-link bell bell-link" href="javascript:void(0);">
+                                 <svg width="28" height="28" viewbox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M27 7.88883C27 5.18897 24.6717 3 21.8 3C17.4723 3 10.5277 3 6.2 3C3.3283 3 1 5.18897 1 7.88883V23.7776C1 24.2726 1.31721 24.7174 1.80211 24.9069C2.28831 25.0963 2.8473 24.9912 3.2191 24.6417C3.2191 24.6417 5.74629 22.2657 7.27769 20.8272C7.76519 20.3688 8.42561 20.1109 9.11591 20.1109H21.8C24.6717 20.1109 27 17.922 27 15.2221V7.88883ZM24.4 7.88883C24.4 6.53951 23.2365 5.44441 21.8 5.44441C17.4723 5.44441 10.5277 5.44441 6.2 5.44441C4.7648 5.44441 3.6 6.53951 3.6 7.88883V20.8272L5.4382 19.0989C6.4132 18.1823 7.73661 17.6665 9.11591 17.6665H21.8C23.2365 17.6665 24.4 16.5726 24.4 15.2221V7.88883ZM7.5 15.2221H17.9C18.6176 15.2221 19.2 14.6745 19.2 13.9999C19.2 13.3252 18.6176 12.7777 17.9 12.7777H7.5C6.7824 12.7777 6.2 13.3252 6.2 13.9999C6.2 14.6745 6.7824 15.2221 7.5 15.2221ZM7.5 10.3333H20.5C21.2176 10.3333 21.8 9.7857 21.8 9.11104C21.8 8.43638 21.2176 7.88883 20.5 7.88883H7.5C6.7824 7.88883 6.2 8.43638 6.2 9.11104C6.2 9.7857 6.7824 10.3333 7.5 10.3333Z" fill="#4f7086"></path>
+									</svg>
+									<span class="badge light text-white bg-primary rounded-circle">5</span>
+                                </a>
+							</li>
+                            <li class="nav-item">
+								<a href="javascript:void(0);" class="btn btn-primary d-sm-inline-block d-none">Dias sin accidentes (121)<i class="las la-signal ms-3 scale5"></i></a>
+							</li>
+                        </ul>
+                    </div>
+				</nav>
+			</div>
+		</div>
+        <!--**********************************
+            Header end ti-comment-alt
+        ***********************************-->
+
+    <!--**********************************
+            Sidebar start
+        ***********************************-->
+        <div class="dlabnav">
+            <div class="dlabnav-scroll">
+				<ul class="metismenu" id="menu">
+					<li class="dropdown header-profile">
+						<a class="nav-link" href="javascript:void(0);" role="button" data-bs-toggle="dropdown">
+							<img src="images/yo.jpg" width="20" alt="">
+							<div class="header-info ms-3">
+								<span class="font-w600 ">Hola,<b>Stiven</b></span>
+								<small class="text-end font-w400">stevenq155@gmail.com</small>
+							</div>
+						</a>
+						<div class="dropdown-menu dropdown-menu-end">
+							<a href="index.html" class="dropdown-item ai-icon">
+								<svg id="icon-user1" xmlns="http://www.w3.org/2000/svg" class="text-primary" width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+								<span class="ms-2">Profile </span>
+							</a>
+							<a href="index.html" class="dropdown-item ai-icon">
+								<svg id="icon-inbox" xmlns="http://www.w3.org/2000/svg" class="text-success" width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+								<span class="ms-2">Inbox </span>
+							</a>
+							<a href="index.html" class="dropdown-item ai-icon">
+								<svg id="icon-logout" xmlns="http://www.w3.org/2000/svg" class="text-danger" width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+								<span class="ms-2">Logout </span>
+							</a>
+						</div>
+					</li>
+                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+							<i class="flaticon-025-dashboard"></i>
+							<span class="nav-text">Lineas elite</span>
+						</a>
+                        <ul aria-expanded="false">
+							<li><a href="index.html">Linea 8</a></li>
+							<li><a href="index-2.html">Linea 1</a></li>
+							<li><a href="index-2.html">Linea 10</a></li>
+						</ul>
+
+                    </li>
+                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+						<i class="flaticon-050-info"></i>
+							<span class="nav-text">Recursos</span>
+						</a>
+                        <ul aria-expanded="false">
+                            <li><a href="index.html">Gestion de area</a></li>
+							<li><a href="index.html">Plan de accion</a></li>
+							<li><a href="index.html">MTTR y MTBF</a></li>
+                        </ul>
+
+                    </li>
+                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+						<i class="flaticon-041-graph"></i>
+						<span class="nav-text">Graficos</span>
+						</a>
+                        <ul aria-expanded="false">
+                            <li><a href="grafica_Eficiencia.html">Eficiencias y rendimientos</a></li>
+                            <li><a href="index.html">Cajas producidas</a></li>
+                            <li><a href="index.html">Desperfectos</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+							<i class="flaticon-043-menu"></i>
+							<span class="nav-text">Matrices Polivalencia</span>
+						</a>
+                    </li>
+                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+							<i class="flaticon-022-copy"></i>
+							<span class="nav-text">Estandares (POE`S)</span>
+						</a>
+                    </li>
+                </ul>
+				
+			</div>
+        </div>
+        <!--**********************************
+            Sidebar end
+        ***********************************-->
+				
+		 <!--**********************************
+        Content body start
+    ***********************************-->
+
+	<div class="content-body">
+		<div class="container-fluid">
+			
+			<!-- row -->
+
+
+
+
+			<div class="row">
+				<div class="col-12">
+					<div class="row">
+						<div class="col-xl-6 col-lg-12">
+							<div class="card">
+								<div class="card-header">
+									<h4 class="card-title">Eficiencia de producción</h4>
+								</div>
+								<div class="card-body">
+									<div id="chart2" class="morris_chart_height"></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-6 col-lg-12">
+							<div class="card">
+								<div class="card-header">
+									<h4 class="card-title">Eficiencia utilizacion de linea</h4>
+								</div>
+								<div class="card-body ">
+									<div id="chart3" class="morris_chart_height"></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-6 col-xxl-12">
+							<div class="card">
+								<div class="card-header d-flex flex-wrap border-0 pb-0">
+									<div class="me-auto mb-sm-0 mb-3">
+										<h4 class="card-title mb-2">Rendimiento de azúcar y jarabe</h4>
+										<span class="fs-12">Gráfica conjunta del rendimiento tanto del azúcar y jarabe</span>
+									</div>
+									<a href="javascript:void(0)" class="btn btn-rounded btn-md btn-primary me-3 me-3"><i class="las la-download scale5 me-3"></i>Download Report</a>
+									<div class="dropdown">
+										<a href="javascript:void(0);" class="btn-link" data-bs-toggle="dropdown" aria-expanded="false">
+											<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13Z" stroke="#575757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+												<path d="M12 6C12.5523 6 13 5.55228 13 5C13 4.44772 12.5523 4 12 4C11.4477 4 11 4.44772 11 5C11 5.55228 11.4477 6 12 6Z" stroke="#575757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+												<path d="M12 20C12.5523 20 13 19.5523 13 19C13 18.4477 12.5523 18 12 18C11.4477 18 11 18.4477 11 19C11 19.5523 11.4477 20 12 20Z" stroke="#575757" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+											</svg>
+										</a>
+				
+									</div>
+								</div>
+								<div class="card-body pb-2">
+									<div class="d-sm-flex d-block">
+										
+										<ul class="card-list d-flex mt-sm-0 mt-3">
+											<li class="me-3"><span class="bg-success circle"></span>Azúcar</li>
+											<li><span class="bg-danger circle"></span>Jarabe</li>
+										</ul>
+									</div>
+									<div id="chartBar2" class="bar-chart"></div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>	
+</div>		
+						
+        <!--**********************************
+            Content body end
+        ***********************************-->
+
+
+		    <!--**********************************
+            Footer start
+        ***********************************-->
+        <div class="footer">
+		
+            <div class="copyright">
+                <p>Copyright © Designed &amp; Developed by StivenQ</a> 2023</p>
+            </div>
+        </div>
+        <!--**********************************
+            Footer end
+        ***********************************-->
+		
+	</div>
+       <!--**********************************
+        Scripts
+    ***********************************-->
+    <!-- Required vendors -->
+    <script src="vendor/global/global.min.js"></script>
+    <script src="vendor/chart.js/Chart.bundle.min.js"></script>
+	  <!-- Chart Chartist plugin files -->
+	  <script src="vendor/chartist/js/chartist.min.js"></script>
+	  <script src="vendor/chartist-plugin-tooltips/js/chartist-plugin-tooltip.min.js"></script>
+	  <script src="vendor/jquery-nice-select/js/jquery.nice-select.min.js"></script>
+	  <script src="js/plugins-init/chartist-init.js"></script>
+    
+	<script src="vendor/jquery-nice-select/js/jquery.nice-select.min.js"></script>
+    <!-- Chart Morris plugin files -->
+    <script src="vendor/raphael/raphael.min.js"></script>
+    <script src="vendor/morris/morris.min.js"></script>
+    <script src="js/plugins-init/morris-init.js"></script>
+	
+    <script src="js/custom.min.js"></script>
+	<script src="js/dlabnav-init.js"></script>
+	<script src="js/demo.js"></script>
+    <script src="js/styleSwitcher.js"></script>
+    <script src="script.js"></script>
+	<!-- Dashboard 1 -->
+	<script src="js/dashboard/dashboard-1.js"></script>
+	
+	     <!--**********************************
+        Scripts
+    ***********************************-->
+    <!-- Required vendors -->
+    <script src="vendor/global/global.min.js"></script>
+	<script src="vendor/chart.js/Chart.bundle.min.js"></script>
+	<script src="vendor/jquery-nice-select/js/jquery.nice-select.min.js"></script>
+	
+	<!-- Apex Chart -->
+	<script src="vendor/apexchart/apexchart.js"></script>
+	<script src="vendor/nouislider/nouislider.min.js"></script>
+	<script src="vendor/wnumb/wNumb.js"></script>
+
+	  <!-- Datatable -->
+	  <script src="vendor/datatables/js/jquery.dataTables.min.js"></script>
+	  <script src="js/plugins-init/datatables.init.js"></script>
+	
+	<!-- Dashboard 1 -->
+	<script src="js/dashboard/dashboard-1.js"></script>
+	<script src="js/dashboard/dashboard-2.js"></script>
+
+	<script>
+		jQuery(document).ready(function(){
+			setTimeout(function() {
+				dezSettingsOptions.version = 'dark';
+				new dezSettings(dezSettingsOptions);
+			},500)
+		});
+	</script>
+</body>
+</html>
